@@ -14,15 +14,9 @@
       color: white;
       font-family: sans-serif;
     }
-    .viewer {
+    .player__video {
       width: 100%;
       max-height: 400px;
-    }
-    .controls {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding: 10px;
     }
     .progress {
       background: #555;
@@ -36,12 +30,19 @@
       width: 0%;
       flex: 0;
     }
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
 
 <div class="player">
-  <video class="viewer" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+  <!-- ✅ FIXED: class name changed from "viewer" to "player__video" -->
+  <video class="player__video" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
 
   <div class="progress">
     <div class="progress__filled"></div>
